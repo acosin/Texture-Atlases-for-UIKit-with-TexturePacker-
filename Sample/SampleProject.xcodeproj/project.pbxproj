@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27847F3420C00BAF008BC9C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27847F3220C00BAF008BC9C5 /* ViewController.m */; };
+		27847F3520C00BAF008BC9C5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27847F3320C00BAF008BC9C5 /* ViewController.xib */; };
 		887209C7166C3F0200F7AB5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209C6166C3F0200F7AB5C /* UIKit.framework */; };
 		887209C9166C3F0200F7AB5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209C8166C3F0200F7AB5C /* Foundation.framework */; };
 		887209CB166C3F0200F7AB5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209CA166C3F0200F7AB5C /* CoreGraphics.framework */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27847F3120C00BAF008BC9C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27847F3220C00BAF008BC9C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27847F3320C00BAF008BC9C5 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		887209C2166C3F0200F7AB5C /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887209C6166C3F0200F7AB5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		887209C8166C3F0200F7AB5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +103,9 @@
 				887209D6166C3F0200F7AB5C /* AppDelegate.m */,
 				887209E6166C3F2900F7AB5C /* Extensions */,
 				887209CD166C3F0200F7AB5C /* Supporting Files */,
+				27847F3120C00BAF008BC9C5 /* ViewController.h */,
+				27847F3220C00BAF008BC9C5 /* ViewController.m */,
+				27847F3320C00BAF008BC9C5 /* ViewController.xib */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -175,6 +183,12 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Bachir El Khoury";
+				TargetAttributes = {
+					887209C1166C3F0200F7AB5C = {
+						DevelopmentTeam = AJ4T2H7N92;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 887209BC166C3F0200F7AB5C /* Build configuration list for PBXProject "SampleProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -199,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				887209D1166C3F0200F7AB5C /* InfoPlist.strings in Resources */,
+				27847F3520C00BAF008BC9C5 /* ViewController.xib in Resources */,
 				887209D9166C3F0200F7AB5C /* Default.png in Resources */,
 				887209DB166C3F0200F7AB5C /* Default@2x.png in Resources */,
 				887209DD166C3F0200F7AB5C /* Default-568h@2x.png in Resources */,
@@ -220,6 +235,7 @@
 				887209D7166C3F0200F7AB5C /* AppDelegate.m in Sources */,
 				887209E5166C3F2200F7AB5C /* UIImage+Sprite.m in Sources */,
 				887209EF166C3F9900F7AB5C /* XMLReader.m in Sources */,
+				27847F3420C00BAF008BC9C5 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +308,15 @@
 		887209E1166C3F0200F7AB5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AJ4T2H7N92;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztgame.zt2zs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2687fdb2-94e1-4cce-9df8-041a7d11cbb0";
+				PROVISIONING_PROFILE_SPECIFIER = zt2zsDev;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -303,10 +324,14 @@
 		887209E2166C3F0200F7AB5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztgame.zt2zs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

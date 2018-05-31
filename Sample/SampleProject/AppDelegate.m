@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "UIImage+Sprite.h"
-
+#import "ViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,6 +18,9 @@
     self.window.backgroundColor = [UIColor darkGrayColor];
     [self.window makeKeyAndVisible];
     
+    ViewController* vc = [[ViewController alloc] init];
+    [self.window addSubview:vc.view];
+    [self.window setRootViewController:vc];
     
     self.mySprites      = [UIImage spritesWithContentsOfFile:@"SampleTexture.xml"];
     
