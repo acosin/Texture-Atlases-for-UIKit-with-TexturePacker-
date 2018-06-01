@@ -10,11 +10,13 @@
 {
 	CGFloat scale = [UIScreen mainScreen].scale;
     NSString* file = [[filename lastPathComponent] stringByDeletingPathExtension];
-	if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && 
-		(scale == 2.0))
-	{
-		file = [NSString stringWithFormat:@"%@@2x", file];
-	}
+#if 0 //未提供高清版
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
+        (scale == 2.0))
+    {
+        file = [NSString stringWithFormat:@"%@@2x", file];
+    }
+#endif
 	NSString* extension = [filename pathExtension];
 	NSData* data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:file ofType:extension]];
 	NSError* error = nil;

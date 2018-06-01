@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		27847F3420C00BAF008BC9C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27847F3220C00BAF008BC9C5 /* ViewController.m */; };
 		27847F3520C00BAF008BC9C5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27847F3320C00BAF008BC9C5 /* ViewController.xib */; };
+		27847F3820C0EC0F008BC9C5 /* emoji.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27847F3620C0EC0F008BC9C5 /* emoji.xml */; };
+		27847F3920C0EC0F008BC9C5 /* emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = 27847F3720C0EC0F008BC9C5 /* emoji.png */; };
 		887209C7166C3F0200F7AB5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209C6166C3F0200F7AB5C /* UIKit.framework */; };
 		887209C9166C3F0200F7AB5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209C8166C3F0200F7AB5C /* Foundation.framework */; };
 		887209CB166C3F0200F7AB5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887209CA166C3F0200F7AB5C /* CoreGraphics.framework */; };
@@ -30,6 +32,8 @@
 		27847F3120C00BAF008BC9C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		27847F3220C00BAF008BC9C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27847F3320C00BAF008BC9C5 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		27847F3620C0EC0F008BC9C5 /* emoji.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = emoji.xml; sourceTree = "<group>"; };
+		27847F3720C0EC0F008BC9C5 /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
 		887209C2166C3F0200F7AB5C /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887209C6166C3F0200F7AB5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		887209C8166C3F0200F7AB5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -146,6 +150,8 @@
 		887209F0166C419200F7AB5C /* final */ = {
 			isa = PBXGroup;
 			children = (
+				27847F3720C0EC0F008BC9C5 /* emoji.png */,
+				27847F3620C0EC0F008BC9C5 /* emoji.xml */,
 				887209F1166C419200F7AB5C /* SampleTexture.png */,
 				887209F2166C419200F7AB5C /* SampleTexture.xml */,
 				887209F3166C419200F7AB5C /* SampleTexture@2x.png */,
@@ -214,8 +220,10 @@
 			files = (
 				887209D1166C3F0200F7AB5C /* InfoPlist.strings in Resources */,
 				27847F3520C00BAF008BC9C5 /* ViewController.xib in Resources */,
+				27847F3920C0EC0F008BC9C5 /* emoji.png in Resources */,
 				887209D9166C3F0200F7AB5C /* Default.png in Resources */,
 				887209DB166C3F0200F7AB5C /* Default@2x.png in Resources */,
+				27847F3820C0EC0F008BC9C5 /* emoji.xml in Resources */,
 				887209DD166C3F0200F7AB5C /* Default-568h@2x.png in Resources */,
 				887209F5166C419200F7AB5C /* SampleTexture.png in Resources */,
 				887209F6166C419200F7AB5C /* SampleTexture.xml in Resources */,

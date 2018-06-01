@@ -22,15 +22,15 @@
     [self.window addSubview:vc.view];
     [self.window setRootViewController:vc];
     
-    self.mySprites      = [UIImage spritesWithContentsOfFile:@"SampleTexture.xml"];
+    self.mySprites      = [UIImage spritesWithContentsOfFile:@"emoji.xml"];
     
-    UIImageView *cloud  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"cloud_1.png"]];
+    UIImageView *cloud  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"65419.png"]];
     cloud.center = CGPointMake(150, 150);
     
-    UIImageView *hill  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"hill_1.png"]];
+    UIImageView *hill  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"65432.png"]];
     hill.center = CGPointMake(160, 240);
     
-    UIImageView *tree  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"tree.png"]];
+    UIImageView *tree  = [[UIImageView alloc]initWithImage:[self.mySprites objectForKey:@"faceDelete@2x.png"]];
     tree.center = CGPointMake(200, 200);
 
     
